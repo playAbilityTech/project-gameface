@@ -22,7 +22,7 @@ from PIL import Image
 from src.gui.frames.safe_disposable_frame import SafeDisposableFrame
 
 BTN_SIZE = (225, 86)
-HOME_IM_SIZE = (441, 215)
+HOME_IM_SIZE = (441, 125)
 
 
 class PageHome(SafeDisposableFrame):
@@ -39,7 +39,7 @@ class PageHome(SafeDisposableFrame):
 
         # Top text
         top_label = customtkinter.CTkLabel(
-            master=self, text="Project Gameface Gesture Settings")
+            master=self, text="playAbility gameface fork")
         top_label.cget("font").configure(size=24)
         top_label.grid(row=0,
                        column=0,
@@ -49,7 +49,7 @@ class PageHome(SafeDisposableFrame):
                        columnspan=2)
 
         # Description
-        des_txt = "Project Gameface helps gamers control their mouse cursor using their head movement and facial gestures."
+        des_txt = "Control your keyboard and mouse using your head movement and facial gestures."
         des_label = customtkinter.CTkLabel(master=self,
                                            text=des_txt,
                                            wraplength=400,
@@ -62,20 +62,6 @@ class PageHome(SafeDisposableFrame):
                        sticky="new",
                        columnspan=2)
 
-        # Disclaimer
-        disc_txt = "Disclaimer: Project Gameface is not intended for medical use."
-        disc_label = customtkinter.CTkLabel(master=self,
-                                            text=disc_txt,
-                                            wraplength=700,
-                                            text_color="gray60",
-                                            justify=tkinter.CENTER)
-        disc_label.cget("font").configure(size=14)
-        disc_label.grid(row=2,
-                        column=0,
-                        padx=20,
-                        pady=(5, 10),
-                        sticky="new",
-                        columnspan=2)
 
         # Page camera btn
         page_camera_btn_im = customtkinter.CTkImage(
@@ -135,7 +121,7 @@ class PageHome(SafeDisposableFrame):
 
         # home image
         home_im = customtkinter.CTkImage(
-            Image.open("assets/images/home_im.png"), size=HOME_IM_SIZE)
+            Image.open("assets/images/logo1.png"), size=HOME_IM_SIZE)
         label = customtkinter.CTkLabel(self,
                                        image=home_im,
                                        width=HOME_IM_SIZE[0],

@@ -501,7 +501,7 @@ class PageKeyboard(SafeDisposableFrame):
 
         # Top label.
         self.top_label = customtkinter.CTkLabel(master=self,
-                                                text="Keyboard binding")
+                                                text="Configuration Clavier")
         self.top_label.cget("font").configure(size=24)
         self.top_label.grid(row=0,
                             column=0,
@@ -509,15 +509,6 @@ class PageKeyboard(SafeDisposableFrame):
                             pady=5,
                             sticky="nw",
                             columnspan=1)
-
-        # Description.
-        des_txt = "Select a facial gesture that you would like to bind to a specific keyboard key. Sensitivity allows you to control the extent to which you need to gesture to trigger the keyboard key press"
-        des_label = customtkinter.CTkLabel(master=self,
-                                           text=des_txt,
-                                           wraplength=300,
-                                           justify=tk.LEFT)  #
-        des_label.cget("font").configure(size=14)
-        des_label.grid(row=1, column=0, padx=20, pady=(10, 40), sticky="nw")
 
         # Inner frame
         self.inner_frame = FrameSelectKeyboard(

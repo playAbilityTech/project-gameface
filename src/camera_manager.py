@@ -268,6 +268,8 @@ class ThreadCameras():
                                    (ConfigManager().config["fix_width"],
                                     ConfigManager().config["fix_height"]))
             frame = cv2.flip(frame, 1)
+
+
             self.frame_buffers["raw"] = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
         return

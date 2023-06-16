@@ -19,9 +19,9 @@ from PIL import Image
 
 from src.config_manager import ConfigManager
 
-ITEM_HEIGHT = 48
-ICON_SIZE = (68, 48)
-MAX_ROWS = 10
+ITEM_HEIGHT = 4
+ICON_SIZE = (4, 4)
+MAX_ROWS = 50
 Y_OFFSET = 30
 
 LIGHT_BLUE = "#FBFBFF"
